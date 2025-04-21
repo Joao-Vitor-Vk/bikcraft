@@ -1,0 +1,97 @@
+.introducao-bg {
+  background-color: #000000;
+  color: #ffffff;
+  box-shadow: inset 0 -120px #ffffff;
+}
+
+.introducao {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0px 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.introducao-conteudo {
+  align-self: end;
+  padding-bottom: 12.5rem;
+}
+
+.introducao img {
+  height: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.introducao h1 {
+  margin-bottom: 32px;
+  font-size: 64px;
+  line-height: 1.125;
+}
+
+.ponto {
+  color: #ffbb00;
+}
+
+.introducao p {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  color: #b2b2b2;
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background: linear-gradient(#ffbb00, #f2a50c);
+  border-radius: 4px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  text-transform: uppercase;
+  color: #332200;
+  font-size: 1.125rem;
+  line-height: 1.33;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.introducao a:hover {
+  background: linear-gradient(#ffb60d, #e59317);
+}
+
+@media (max-width: 1200px) {
+  .introducao h1 {
+    font-size: 3rem;
+  }
+  .introducao p {
+    font-size: 1.125rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .introducao-bg {
+    background-color: #111111;
+    padding-top: 2.5rem;
+    box-shadow: inset 0 -60px #ffffff;
+  }
+  .introducao {
+    grid-template-columns: 1fr;
+  }
+  .introducao-conteudo {
+    padding-bottom: 0rem;
+  }
+  .introducao h1 {
+    font-size: 2rem;
+    margin-bottom: 16px;
+  }
+  .introducao img {
+    height: 300px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .introducao a {
+    padding: 0.8rem 1rem;
+    font-size: 1rem;
+  }
+}
